@@ -31,7 +31,26 @@
 #define COLOR_BG_2            232,228,224
 #define COLOR_BORDER          102,85,74
 
-#if defined(PLATFORM_DINGOO)
+#define DINGOO_X SDLK_LSHIFT
+#define DINGOO_Y SDLK_LALT
+
+#if defined(PLATFORM_TRIMUI)
+// Keys for TRIMUI
+#define MYKEY_UP            SDLK_UP           // Up
+#define MYKEY_RIGHT         SDLK_RIGHT        // Right
+#define MYKEY_DOWN          SDLK_DOWN         // Down
+#define MYKEY_LEFT          SDLK_LEFT         // Left
+#define MYKEY_SYSTEM        SDLK_LALT         // Y
+#define MYKEY_PAGEUP        SDLK_TAB          // L
+#define MYKEY_PAGEDOWN      SDLK_BACKSPACE    // R
+#define MYKEY_OPEN          SDLK_SPACE        // A
+#define MYKEY_PARENT        SDLK_LCTRL        // B
+#define MYKEY_OPERATION     SDLK_LSHIFT       // X
+#define MYKEY_SELECT        SDLK_RCTRL        // SELECT
+#define MYKEY_TRANSFER      SDLK_RETURN       // START
+#define PATH_DEFAULT        "/"
+#define FILE_SYSTEM         "/dev/mmcblk0p1"
+#elif defined(PLATFORM_DINGOO)
 // Keys for Dingoo
 #define MYKEY_UP            SDLK_UP           // Up
 #define MYKEY_RIGHT         SDLK_RIGHT        // Right

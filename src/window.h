@@ -1,7 +1,7 @@
 #ifndef _WINDOW_H_
 #define _WINDOW_H_
 
-#include <SDL.h>
+#include <SDL/SDL.h>
 
 class CWindow
 {

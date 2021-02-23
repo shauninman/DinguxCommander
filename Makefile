@@ -1,17 +1,19 @@
+CXX:=/opt/trimui/bin/arm-unknown-linux-gnueabi-g++
+CXXFLAGS:=-DPLATFORM_TRIMUI -O3 -fomit-frame-pointer -ffast-math -funroll-loops
+CONFIG=trimui
+
 ifeq ($(CONFIG),)
 CONFIGS:=$(foreach CFG,$(wildcard config-*.mk),$(CFG:config-%.mk=%))
 $(error Please specify CONFIG, possible values: $(CONFIGS))
 endif
 
-include config-$(CONFIG).mk
-
 RESDIR:=res
 
 CXXFLAGS+=-Wall -Wno-unknown-pragmas -Wno-format
-CXXFLAGS+=$(shell $(SDL_CONFIG) --cflags)
+CXXFLAGS+=
 CXXFLAGS+=-DRESDIR="\"$(RESDIR)\""
 LINKFLAGS+=-s
-LINKFLAGS+=$(shell $(SDL_CONFIG) --libs) -lSDL_image -lSDL_ttf
+LINKFLAGS+=-lSDL -lSDL_image -lSDL_ttf
 
 ifdef V
 	CMD:=

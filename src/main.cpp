@@ -1,7 +1,7 @@
 #include <cstdlib>
 #include <iostream>
-#include <SDL.h>
-#include <SDL_ttf.h>
+#include <SDL/SDL.h>
+#include <SDL/SDL_ttf.h>
 #include "def.h"
 #include "sdlutils.h"
 #include "resourceManager.h"
