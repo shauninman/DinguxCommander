@@ -44,7 +44,8 @@ const bool CCommander::keyPress(const SDL_Event &p_event)
     bool l_ret(false);
     switch (p_event.key.keysym.sym)
     {
-        case MYKEY_SYSTEM:
+		case MYKEY_SYSTEM:
+		case MYKEY_MENU:
             if (openSystemMenu())
                 m_panelSource->refresh();
             l_ret = true;

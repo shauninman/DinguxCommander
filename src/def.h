@@ -48,6 +48,7 @@
 #define MYKEY_OPERATION     SDLK_LSHIFT       // X
 #define MYKEY_SELECT        SDLK_RCTRL        // SELECT
 #define MYKEY_TRANSFER      SDLK_RETURN       // START
+#define MYKEY_MENU          SDLK_ESCAPE       // MENU
 #define PATH_DEFAULT        "/"
 #define FILE_SYSTEM         "/dev/mmcblk0p1"
 #elif defined(PLATFORM_DINGOO)
