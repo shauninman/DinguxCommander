@@ -1,4 +1,4 @@
-CXX:=/opt/trimui/bin/arm-unknown-linux-gnueabi-g++
+CXX:=/opt/trimui-toolchain/bin/arm-buildroot-linux-gnueabi-g++
 CXXFLAGS:=-DPLATFORM_TRIMUI -O3 -fomit-frame-pointer -ffast-math -funroll-loops
 CONFIG=trimui
 
