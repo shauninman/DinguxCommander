@@ -100,6 +100,7 @@ const bool CViewer::keyPress(const SDL_Event &p_event)
     switch (p_event.key.keysym.sym)
     {
         case MYKEY_PARENT:
+        case MYKEY_MENU:
             m_retVal = -1;
             l_ret = true;
             break;
